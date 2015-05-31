@@ -5,7 +5,7 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Dependency Status][david_img]][david_site]
 
-> Get latest release information from github repository
+> Get latest release information from github repository using [github api](https://developer.github.com/v3/repos/releases/#get-the-latest-release)
 
 
 ## Install
