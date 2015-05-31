@@ -47,7 +47,6 @@ function output(json) {
     'tag_name',
     'target_commitish',
     'name',
-    'body',
     'draft',
     'prerelease',
     'created_at',

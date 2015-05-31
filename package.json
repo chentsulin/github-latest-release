@@ -5,7 +5,8 @@
   "license": "MIT",
   "repository": "chentsulin/github-latest-release",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test-travis": "node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --reporter dot"
   },
   "author": {
     "name": "C.T. Lin",
@@ -33,6 +34,7 @@
   },
   "devDependencies": {
     "istanbul": "^0.3.14",
-    "mocha": "*"
+    "mocha": "*",
+    "nock": "^2.3.0"
   }
 }

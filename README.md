@@ -28,7 +28,6 @@ latest('atom', 'electron')
   "tag_name": "v1.0.0",
   "target_commitish": "master",
   "name": "v1.0.0",
-  "body": "Description of the release",
   "draft": false,
   "prerelease": false,
   "created_at": "2013-02-27T19:35:32Z",

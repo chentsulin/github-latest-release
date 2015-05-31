@@ -16,7 +16,6 @@ var cli = meow({
     '  tag_name: \'v0.27.1\'',
     '  target_commitish: \'master\'',
     '  name: \'electron v0.27.1\'',
-    '  body: \'Changelog:\\r\\n\\r\\n* __Fix random crash caused by race condition when reading request headers.__\\r\\n* Add `readHtml` and `writeHtml` methods for `clipboard` module.\\r\\n* Fix loading `javascript:` urls.\\r\\n\\r\\n\'',
     '  draft: false',
     '  prerelease: false',
     '  created_at: \'2015-05-28T08:23:29Z\'',
