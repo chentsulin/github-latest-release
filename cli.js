@@ -2,23 +2,27 @@
 'use strict'
 
 var meow = require('meow')
-var githubLatestRelease = require('./')
+var latest = require('./')
 
 var cli = meow({
 	help: [
 		'Usage',
-		'  $ github-latest-release [input]',
+		'  $ github-latest-release [owner] [repo]',
 		'',
 		'Examples',
-		'  $ github-latest-release',
-		'  unicorns & rainbows',
-		'',
-		'  $ github-latest-release ponies',
-		'  ponies & rainbows',
-		'',
-		'Options',
-		'  --foo  Lorem ipsum. Default: false'
+		'  $ github-latest-release atom electron',
+    '',
+		'  { id: 1346672',
+    '  tag_name: \'v0.27.1\'',
+    '  target_commitish: \'master\'',
+    '  name: \'electron v0.27.1\'',
+    '  body: \'Changelog:\\r\\n\\r\\n* __Fix random crash caused by race condition when reading request headers.__\\r\\n* Add `readHtml` and `writeHtml` methods for `clipboard` module.\\r\\n* Fix loading `javascript:` urls.\\r\\n\\r\\n\'',
+    '  draft: false',
+    '  prerelease: false',
+    '  created_at: \'2015-05-28T08:23:29Z\'',
+    '  published_at: \'2015-05-28T09:16:50Z\' }',
 	].join('\n')
 })
 
-console.log(githubLatestRelease(cli.input[0] || 'unicorns'))
+latest(cli.input[0], cli.input[1])
+.then(console.log.bind(console))

@@ -5,7 +5,7 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Dependency Status][david_img]][david_site]
 
-> My module
+> Get latest release information from github repository
 
 
 ## Install
@@ -18,10 +18,21 @@ $ npm install github-latest-release
 ## Usage
 
 ```js
-var githubLatestRelease = require('github-latest-release');
+var latest = require('github-latest-release')
 
-githubLatestRelease('test');
+latest('atom', 'electron')
 //=>
+{
+  "id": 1,
+  "tag_name": "v1.0.0",
+  "target_commitish": "master",
+  "name": "v1.0.0",
+  "body": "Description of the release",
+  "draft": false,
+  "prerelease": false,
+  "created_at": "2013-02-27T19:35:32Z",
+  "published_at": "2013-02-27T19:35:32Z"
+}
 ```
 
 
@@ -31,42 +42,28 @@ githubLatestRelease('test');
 $ npm install -g github-latest-release
 ```
 ```
-$ github-latest-release --help
-
-  Usage
-    github-latest-release [input]
-
-  Example
-    github-latest-release
-    unicorns & rainbows
-
-    github-latest-release ponies
-    ponies & rainbows
-
-  Options
-    --foo  Lorem ipsum. Default: false
+$ github-latest-release atom electron
 ```
 
 
 ## API
 
-### githubLatestRelease(input, [options])
+### githubLatestRelease(owner, repo, [cb])
 
-#### input
+#### owner
 
 *Required*
 Type: `string`
 
-Lorem ipsum.
+repo owner.
 
-#### options
+#### repo
 
-##### foo
+*Required*
+Type: `string`
 
-Type: `boolean`
-Default: `false`
+repo name.
 
-Lorem ipsum.
 
 
 ## License
