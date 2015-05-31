@@ -1,0 +1,39 @@
+{
+	"name": "github-latest-release",
+	"version": "0.1.0",
+	"description": "My module",
+	"license": "MIT",
+	"repository": "chentsulin/github-latest-release",
+  "scripts": {
+    "test": "mocha",
+    "test-travis": "node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --reporter dot"
+  },
+	"author": {
+		"name": "C.T. Lin",
+		"email": "chentsulin@gmail.com",
+		"url": "github.com/chentsulin/github-latest-release"
+	},
+	"bin": "cli.js",
+	"engines": {
+		"node": ">=0.10.0"
+	},
+	"scripts": {
+		"test": "mocha"
+	},
+	"files": [
+		"index.js",
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		""
+	],
+	"dependencies": {
+		"meow": "^3.0.0"
+	},
+	"devDependencies": {
+    "istanbul": "^0.3.14",
+		"mocha": "*"
+	}
+}
