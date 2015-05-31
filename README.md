@@ -21,6 +21,7 @@ $ npm install github-latest-release
 var latest = require('github-latest-release')
 
 latest('atom', 'electron')
+.then(console.log.bind(console))
 //=>
 {
   "id": 1,
@@ -48,22 +49,28 @@ $ github-latest-release atom electron
 
 ## API
 
-### githubLatestRelease(owner, repo, [cb])
+### githubLatestRelease(owner, repo [, cb])
 
 #### owner
 
 *Required*
 Type: `string`
 
-repo owner.
+repository owner.
 
 #### repo
 
 *Required*
 Type: `string`
 
-repo name.
+repository name.
 
+#### cb
+
+*Optional*
+Type: `function (err, res)`
+
+If no callback given, will return promise.
 
 
 ## License
