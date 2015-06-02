@@ -8,9 +8,13 @@ var target = '/releases/latest'
 
 
 exports = module.exports = function(owner, repo, cb) {
-	if (typeof owner !== 'string') {
-		throw new TypeError('owner Expected a string')
-	}
+  if (cb & typeof cb !== 'function') {
+    throw new TypeError('callback Expected a function')
+  }
+
+  if (typeof owner !== 'string') {
+    throw new TypeError('owner Expected a string')
+  }
 
   if (typeof repo !== 'string') {
     throw new TypeError('repo Expected a string')
