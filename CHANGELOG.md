@@ -1,10 +1,8 @@
-# 0.1.0 (2015/x/x)
+# 0.1.1 (2015/6/2)
 
 #### Features
 
-- **A:**
-- **B:**
+- **Node Module**
+- **CLI Usage**
+- **Tests**
 
-#### Bug Fixed
-
-- **C:**

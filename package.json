@@ -1,6 +1,6 @@
 {
   "name": "github-latest-release",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get latest release information from github repository",
   "license": "MIT",
   "repository": "chentsulin/github-latest-release",

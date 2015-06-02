@@ -6,7 +6,6 @@ var nock = require('nock')
 var fixture = require('./fixture')
 
 
-
 var expect = {
   'id': 1346672,
   'tag_name': 'v0.27.1',
@@ -17,6 +16,7 @@ var expect = {
   'created_at': '2015-05-28T08:23:29Z',
   'published_at': '2015-05-28T09:16:50Z'
 }
+
 
 it('should throw when callback is not a function', function() {
   try {
